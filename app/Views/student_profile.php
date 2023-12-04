@@ -7,6 +7,9 @@
 </head>
 <body>
     <p>Profile</p>
-    <b><?= $userId ?></b>
+    <?php foreach ($data as $user) { ?>
+        <p><?= $user->name ?></p>
+    <?php } ?>
+    <b><?= $data[0]->name ?></b>
 </body>
 </html>
